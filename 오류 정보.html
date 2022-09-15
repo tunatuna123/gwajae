@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="코드업 - 오류 정보">
+    <meta name="keywords" content="코딩,C언어,프로그래밍,정보올림피아드,알고리즘,문제해결">
+    <meta name="author" content="코드업">
+
+    <link rel="icon" href="favicon.ico">
+
+    <title>오류 정보</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-27DWGQV1ZL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-27DWGQV1ZL');
+</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/solid.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./template/bs/codeup.css" type="text/css">
+</head>
+<body>
+
+    
+<header class="header clearfix">
+<nav id="navground" class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand font-weight-bold" href="index.php">CodeUp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+            <a class="nav-link" href="discuss.php">게시판</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">문제</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="problemset.php">문제</a>
+            <a class="dropdown-item" href="problemsetsol.php">문제집</a>
+            <a class="dropdown-item" href="recentprob.php">최근 100문제</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">수업</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="class.php?class_id=0">최근 수업</a>
+            <a class="dropdown-item" href="class.php?school=0">내 수업</a>
+            <a class="dropdown-item" href="class.php">학교 수업</a>
+            <a class="dropdown-item" href="classop.php">개인 강의</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+            <a class="nav-link" href="status.php">채점상황</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">순위</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="ranklist.php">전체 순위</a>
+            <a class="dropdown-item" href="ranklist_1.php">그룹내 순위</a>
+            <a class="dropdown-item" href="ranklist_g.php">그룹별 순위</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class='badge badge-pill badge-danger'>5</span><span class=red>&nbsp;이벤트</span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="contest.php"><span class='badge badge-pill badge-danger'>5</span><span class=red>&nbsp;이벤트</span></a>
+            <a class="dropdown-item" href="recent.php">해외 대회</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">도구</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="tools/memo.html">아이디어 연습장</a>
+            <a class="dropdown-item" href="random.php">랜덤 번호 뽑기</a>
+                        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="faqs.ko.php">FAQ</a>
+            <a class="dropdown-item" href="edufaq.php">교사 권한 FAQ</a>
+            <a class="dropdown-item" href="info.php">코드업 통계</span></a>
+            <a class="dropdown-item" href="book.php">도서 안내</span></a>
+        </div>
+      </li>
+
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">내 정보
+        </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./userinfo.php?user=tunatuna2005"><i class="fas fa-user"></i> tunatuna2005</a>
+                <a class="dropdown-item" href="./modifypage.php"><i class="fas fa-user-edit"></i> 정보수정 및 탈퇴</a>
+                <a class="dropdown-item" href="./mytheme.php"><i class="fas fa-code"></i> 코딩 스타일 설정</a>
+                <a class="dropdown-item" href="./rival.php"><i class="fas fa-users"></i> 나의 라이벌</a>
+
+                        <a class="dropdown-item" href=./mail.php><i class="fas fa-envelope"></i> 쪽지 </a>
+        
+                <a class="dropdown-item" href="./setschool.php"><i class="fas fa-school"></i> 선생님ID 등록</a>
+                <a class="dropdown-item" href="./setteacher.php"><i class="fas fa-chalkboard-teacher"></i> 교사권한 신청</a>
+                <a class="dropdown-item" href="./status.php?user_id=tunatuna2005"><i class="fas fa-newspaper"></i> 내 제출 현황</a>
+                <a class="dropdown-item" href="./logout.php"><i class="fas fa-sign-out-alt"></i> 로그 아웃</a>
+            </div>
+      </li>
+    
+
+
+    </ul> <!-- main nav -->
+
+    
+  </div> <!-- container-fluid -->
+</nav>
+</header>
+
+
+
+
+    
+<main role="main">
+<div class="container mt-2">
+
+
+
+<pre id='errtxt' class="alert alert-danger">- 총 9개 중 7번째 테스트 케이스 - <br />점수 = 67 / 100
+
+입력:
+17 10 27
+</pre>
+
+		<div class="row">
+		  <div class="col-md-6"><div class="card"><div class="card-header">정답</div><div class="card-body"><pre>
+lose
+-----------------
+</pre></div></div></div>
+		  <div class="col-md-6"><div class="card"><div class="card-header">출력 결과</div><div class="card-body"><pre>
+same
+=================
+</pre></div></div></div>
+		</div>
+
+<div id='errexp'>설명:</div>
+
+</div>
+</main>
+
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/js/all.js"></script>
+
+<hr/>
+
+<footer class="container">
+
+<h6 class="text-center">
+		Copyright(C) 2012- <a href='mailto:admin@codeup.kr'>CodeUp</a><br />
+		(E-mail : admin@codeup.kr)
+</h6>
+
+
+</footer>
+
+    <script>
+// 중국어 -> 영어 -> 한글로 변환
+   var pats=new Array();
+   var exps=new Array();
+   pats[0]=/A Not allowed system call.* /;
+   exps[0]="금지된 시스템 접근입니다. 세그먼트 에러일수도 있습니다.(배열 크기 및 인덱스 지정 잘못, 문제의 입력 크기 확인 요망)";
+   pats[1]=/Segmentation fault/;
+   exps[1]="세그먼트 에러입니다. 배열의 잘못된 인덱스 지정, 포인터의 잘못된 사용, 또는 잘못된 메모리 참조가 원인입니다.<br><br>1. 주로 배열의 크기를 벗어난 영역을 접근할 때 발생합니다.(음수인덱스, 배열의 최대크기-1 보다 큰 인덱스를 지정할때 발생)<br>2. scanf 입력처리가 잘못된 경우도 해당됩니다. (예: scanf(\"%d\", a); // a앞에 &를 붙이지 않은 경우<br>3. STL같은 동적인 자료구조를 생성할 때에도 주의해야 합니다.<br>4. freopen, fopen 등의 파일처리 부분을 삭제하지 않았을 경우에도 해당됩니다. 해당부분을 주석처리하기 바랍니다. ";
+   pats[2]=/Floating point exception/;
+   exps[2]="부동 소수점 에러,0으로 나누었는지 확인하세요.";
+   pats[3]=/buffer overflow detected/;
+   exps[3]="버퍼 오버플로우, 문자열이 배열보다 긴지 확인하세요.";
+   pats[4]=/Killed/;
+   exps[4]="메모리나 제한시간때문에 프로세스가 끝났음, 무한루프가 있는지 확인하세요.";
+   pats[5]=/Alarm clock/;
+   exps[5]="Process to be killed, because of time reasons to check whether there is a cycle of death, this error is equivalent to a timeout TLE";
+
+
+   function explain(){
+     //alert("asdf");
+       var errmsg=document.getElementById("errtxt").innerHTML;
+	   var expmsg="설명：<br>";
+	   for(var i=0;i<pats.length;i++){
+		   var pat=pats[i];
+		   var exp=exps[i];
+		   var ret=pat.exec(errmsg);
+		   if(ret){
+		      expmsg+=ret+":"+exp+"<br>";
+		   }
+	   }
+	   document.getElementById("errexp").innerHTML=expmsg;
+     //alert(expmsg);
+   }
+   explain();
+ 
+ </script>
+ 
+</body>
+</html>
+
