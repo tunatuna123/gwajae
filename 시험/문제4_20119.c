@@ -17,7 +17,7 @@ int main(){
         d[4] = 1;
     }
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < sizeof(d)/sizeof(int); i++)
         {
             printf("%d", d[i]);
         }
