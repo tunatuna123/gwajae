@@ -1,21 +1,16 @@
 #include <stdio.h>
 
-int ans = 1;
-
-int f(int n){
-    if (n <= 1)
-    {
-        return ans;
-    }
-    ans*=n;
-    n--;
-    f(n);
-
-    return ans;
+int f(int k)
+{
+    if (k==1) return 1;
+    return k * f(k-1);
 }
 
-int main(){
+int main()
+{
     int n;
+
     scanf("%d", &n);
-    printf("%d\n", f(n));
+    printf("%d", f(n));
+    return 0;
 }
